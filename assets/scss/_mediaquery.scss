@@ -1,0 +1,108 @@
+@media screen and (max-width: 1670px) {
+    // HEADER => header_text
+    .header_text{
+        padding: 10em 22em;
+    }
+}
+
+@media screen and (max-width: 1413px) {
+     // HEADER => header_text
+     .header_text{
+        padding: 10em;
+    }
+    // MAIN
+    .card_main{
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 1535px){
+    // GALLERY
+    .gallery .left_gallery{
+        height: 82em;
+        padding-left: 1em;
+    }
+}
+
+@media screen and (max-width: 1180px){
+    // MAIN
+    .content_main{
+        padding: 8em 1em;
+        .card_main{
+            width: 154px;
+            img{
+            padding: 1em;
+            }
+            h3{
+            font-size: 1em;
+            }
+            p, a{
+                font-size: 0.75em;
+            }
+            .button_blue{
+                width: 7em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    // HEADER => header_menu
+    .header_menu{
+        display: block;
+        padding-bottom: 3em;
+        li{
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 1029px) {
+     // HEADER => header_text
+     .header_text{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1090px){
+     // HEADER => header_menu
+     header{
+         padding: 2em;
+     }
+     .header_menu li{
+        font-size: 0.8em;
+        }
+}
+
+@media screen and (max-width: 700px){
+    .content_main{
+        flex-direction: column;
+        .card_main{
+            width: 300px;
+            text-align: center;
+            img{
+                @include icon_color;
+                margin-bottom: 3em;
+            }
+            h3{
+                border-bottom: 2px solid $graylight;
+                padding-bottom: 2em;
+                font-size: 1.17em;
+            }
+            p{
+                margin-top: 2em;
+                line-height: 2;
+                font-size: 1em;
+            }
+            a{
+                color: white;
+                font-weight: bold;
+                font-size: 1em;
+            }
+            .button_blue{
+                margin-bottom: 8em;
+                width: 10em;
+            }
+        }
+    }
+}

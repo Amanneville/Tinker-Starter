@@ -1,0 +1,33 @@
+/* FLEX CENTER */
+@mixin flex ($just:center, $dir:row, $align:center) {
+    display: flex;
+    justify-content: $just;
+    flex-direction: $dir;
+    align-items: $align;
+}
+
+/* LOGO */
+@mixin logo {
+        color: white;
+        span{
+            color: $yellow;
+            font-size: 1.5em;
+        }
+}
+
+/* COLOR TEXT */
+@mixin text_blue {
+    color: $blue;
+}
+
+@mixin text_orange {
+    color: $orange;
+}
+
+/* COLOR ICONS */
+@mixin icon_color {
+    background-color: $yellow;
+    padding: 2em;
+    border-radius: 50%;
+    border: 2px solid white;
+}

@@ -1,0 +1,58 @@
+// BACKGROUND HEADER
+header{
+    background-image: url(../images/banner_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2em 5em;
+}
+
+// NAVBAR HEADER
+.header_menu{
+    text-transform: uppercase;
+    @include flex ($just: space-between);
+    h2{
+        @include logo;
+    }
+
+    li{
+        display: inline;
+        a{
+            color: white;
+            padding: 3em;
+        }
+    } 
+}
+
+// TEXT HEADER
+.header_text{
+    text-align: center;
+    padding: 10em 30em;
+    line-height: 2;
+    .text_blue{
+        @include text_blue;
+    }
+    .text_orange{
+        @include text_orange;
+    }
+    .button_start{
+        background-color: white;
+        border-radius: 50px;
+        padding: 0.6em;
+        width: 7em;
+        margin: 2em auto;
+    }
+    a{
+        color: black;
+        font-weight: bold;
+    }
+}
+
+// REPEATED IMG EFFECT
+.repeat_img{
+    height: 60px;
+    margin: auto;
+    background-image: url(../images/banner_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
