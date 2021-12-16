@@ -12,6 +12,10 @@ body {
   color: white;
 }
 
+.txtBlod {
+  font-weight: bold;
+}
+
 /* LES POLICES */
 @font-face {
   font-family: "roboto";
@@ -151,7 +155,7 @@ header {
   background-color: #3dc1cd;
   background-size: contain;
   width: 25%;
-  height: 22em;
+  height: 24em;
   padding: 20em 4em;
 }
 .gallery .left_gallery h3 {
@@ -175,7 +179,7 @@ header {
   color: white;
   font-weight: bold;
 }
-.gallery .left_gallery .text_yellow {
+.gallery .left_gallery a:hover {
   color: #f6c45c;
 }
 .gallery .photos_gallery {
@@ -184,6 +188,49 @@ header {
 .gallery .photos_gallery img {
   height: 20em;
   float: left;
+}
+
+.yellowFrame {
+  text-align: center;
+  background-color: #f6c45c;
+  padding: 5em;
+}
+.yellowFrame .whiteFrame {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  color: black;
+  width: 505px;
+  height: 85px;
+  padding: 2em;
+  border-radius: 4px;
+  color: #596065;
+}
+.yellowFrame .richard {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+.yellowFrame .circles {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.yellowFrame .falseCircles {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 50%;
+  margin-top: 1em;
+  margin-right: 0.5em;
+}
+.yellowFrame .falseCircles:last-child {
+  opacity: 100%;
 }
 
 @media screen and (max-width: 1670px) {

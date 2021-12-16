@@ -1,91 +1,129 @@
 // BACKGROUND MAIN
-.content_main{
-        background-image: url(../images/about-bg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding: 8em 5em;
-        @include flex ($just:space-evenly);
+.content_main {
+  background-image: url(../images/about-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 8em 5em;
+  @include flex($just: space-evenly);
 
-        .card_main_responsive{
-            @include flex;
-        }
+  .card_main_responsive {
+    @include flex;
+  }
 }
 
 // ICONS COLOR
-.card_main{
-    width: 300px;
-    text-align: center;
-    img{
-        @include icon_color;
-        margin-bottom: 3em;
-    }
-    h3{
-        border-bottom: 2px solid $graylight;
-        padding-bottom: 2em;
-    }
-    p{
-        margin-top: 2em;
-        line-height: 2;
-    }
-    a{
-        color: white;
-        font-weight: bold;
-    }
+.card_main {
+  width: 300px;
+  text-align: center;
+  img {
+    @include icon_color;
+    margin-bottom: 3em;
+  }
+  h3 {
+    border-bottom: 2px solid $graylight;
+    padding-bottom: 2em;
+  }
+  p {
+    margin-top: 2em;
+    line-height: 2;
+  }
+  a {
+    color: white;
+    font-weight: bold;
+  }
 }
 
 // REPEATED IMG EFFECT
-.img_repeat{
-    height: 80px;
-    margin: auto;
-    background-image: url(../images/about-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+.img_repeat {
+  height: 80px;
+  margin: auto;
+  background-image: url(../images/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 // GALLERY PART
+.gallery {
+  @include flex($align: flex-start, $just: left);
+  .left_gallery {
+    background-color: $blue;
+    background-size: contain;
+    width: 25%;
+    height: 24em;
+    padding: 20em 4em;
 
-.gallery{
-    @include flex ($align:flex-start, $just:left);
-    .left_gallery{
-        background-color: $blue;
-        background-size: contain;
-        width: 25%;
-        height: 22em;
-        padding: 20em 4em;
-
-        h3{
-            text-transform: uppercase;
-            border-bottom: 1px solid white;
-            padding-bottom: 1.5em;
-            width: 16em;
-        }
-        p{
-            padding-top: 1.5em;
-            line-height: 2;
-            margin-bottom: 4em;
-        }
-        span{
-            display: block;
-        }
-        li{
-            padding-bottom: 2em;
-        }
-        a{
-            color: white;
-            font-weight: bold;
-        }
-        .text_yellow{
-            color: $yellow;
-        }
+    h3 {
+      text-transform: uppercase;
+      border-bottom: 1px solid white;
+      padding-bottom: 1.5em;
+      width: 16em;
     }
-    
-    // PICTURES GALLERY
-    .photos_gallery{
-        margin: 2em;
-        img{
-            height: 20em;
-            float: left;
-        }
+    p {
+      padding-top: 1.5em;
+      line-height: 2;
+      margin-bottom: 4em;
+    }
+    span {
+      display: block;
+    }
+    li {
+      padding-bottom: 2em;
+    }
+    a {
+      color: white;
+      font-weight: bold;
+    }
+    a:hover {
+      color: $yellow;
+    }
+  }
+
+  // PICTURES GALLERY
+  .photos_gallery {
+    margin: 2em;
+    img {
+      height: 20em;
+      float: left;
+    }
+  }
+}
+
+// YELLOW FRAME
+.yellowFrame{
+    text-align: center;
+    background-color: $yellow;
+    padding: 5em;
+    .whiteFrame{
+        @include flex;
+        text-align: center;
+        margin: auto;
+        background-color: white;
+        color: black;
+        width: 505px;
+        height: 85px;
+        padding: 2em;
+        border-radius: 4px;
+        color: $graylight;
+    }
+    .richard{
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+    }
+    .circles{
+        @include flex;
+    }
+    .falseCircles{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: white;
+        opacity: 50%;
+        margin-top: 1em;
+        margin-right: 0.5em;
+    }
+    .falseCircles:last-child{
+        opacity: 100%;
     }
 }
+
